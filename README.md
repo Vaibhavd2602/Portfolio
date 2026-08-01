@@ -48,9 +48,9 @@ The portfolio is deployed on **Vercel**.
 
 ## 📬 Contact
 
-* **Email:** [vaibhav.123456dubey@gmai.com](mailto:your-email@example.com)
+* **Email:** vaibhav.123456dubey@gmai.com
 * **GitHub:** https://github.com/Vaibhavd2602
-* **LinkedIn:** https://github.com/Vaibhavd2602/
+* **LinkedIn:** http://www.linkedin.com/in/vaibhav2602
 * **LeetCode:** https://leetcode.com/u/Vickyy2602/
 
 ## 📄 Resume
