@@ -1,66 +1,127 @@
-# 💼 Vaibhav Dubey - Developer Portfolio
+# 💼 Vaibhav Dubey — Developer Portfolio
 
-Welcome to my personal portfolio website! This portfolio showcases my skills, projects, certifications, and achievements as an aspiring **Software Developer** and **AI/ML Enthusiast**.
+Welcome to my personal portfolio website! 🚀
 
-## 🌐 Live Demo
+This portfolio represents my journey as an aspiring **Software Developer and AI/ML Enthusiast**, showcasing my technical skills, projects, certifications, education, coding profiles, and achievements.
 
-🔗 **Portfolio:** https://portfolio-vickyy1.vercel.app/
+---
 
-## 📌 About
+## 🌐 Live Portfolio
 
-This is a responsive personal portfolio built using **HTML, CSS, and JavaScript**. It highlights my technical background, development projects, coding profiles, certifications, and contact information.
+🔗 **Visit Portfolio:**  
+https://portfolio-vickyy1.vercel.app/
 
-## ✨ Features
+---
 
-* Responsive design for desktop, tablet, and mobile
-* Modern and clean UI
-* About Me section
-* Technical Skills
-* Projects showcase
-* Certifications
-* Education
-* Contact section
-* Resume download
-* Social media links
-* Smooth scrolling and animations
+## 👨‍💻 About Me
+
+I am a **B.Tech student specializing in Artificial Intelligence**, passionate about software development, problem solving, and Artificial Intelligence.
+
+I enjoy building practical projects and continuously improving my skills in:
+
+- Artificial Intelligence & Machine Learning
+- Generative AI & LLMs
+- Python Development
+- Web Development
+- Data Structures & Algorithms
+- Problem Solving
+- Database Management
+
+My goal is to build impactful software solutions while continuously learning and exploring new technologies.
+
+---
+
+## ✨ Portfolio Highlights
+
+The portfolio includes:
+
+- 👨‍💻 About Me
+- 🛠️ Technical Skills
+- 🚀 Projects
+- 🎓 Education
+- 📜 Certifications
+- 🏆 Achievements
+- 📄 Resume
+- 📬 Contact Information
+- 🔗 GitHub, LinkedIn & LeetCode Profiles
+
+---
+
+## 🚀 Projects
+
+Some of the projects showcased in my portfolio include:
+
+### 🤖 AI/ML Projects
+
+Projects focused on Artificial Intelligence, Machine Learning, automation, and real-world problem solving.
+
+### 🧠 Multi-Agent AI Research System
+
+A research-oriented AI system that uses multiple specialized AI agents to perform research tasks, gather information, and generate structured results.
+
+### 📄 AI Resume Screening & Job Recommendation System
+
+An AI-powered system designed to analyze resumes and provide relevant job recommendations using Machine Learning and AI techniques.
+
+### 📰 Fake News Detection
+
+A Machine Learning project focused on detecting whether a given news article is real or fake using Natural Language Processing and classification techniques.
+
+---
 
 ## 🛠️ Tech Stack
 
-* HTML5
-* CSS3
-* JavaScript (ES6)
-* Vercel (Deployment)
+### 💻 Languages
+
+- Python
+- C++
+- JavaScript
+- SQL
+
+### 🤖 AI / ML
+
+- Machine Learning
+- Natural Language Processing
+- Generative AI
+- LLMs
+- Multi-Agent AI
+
+### 🌐 Web Development
+
+- HTML5
+- CSS3
+- JavaScript
+- Flask
+- Streamlit
+
+### 🗄️ Database
+
+- MySQL
+- SQLite
+
+### 🔧 Tools & Platforms
+
+- Git
+- GitHub
+- VS Code
+- Jupyter Notebook
+- Vercel
+
+---
 
 ## 📂 Project Structure
 
 ```text
 Portfolio/
-│── index.html
-│── style.css
-│── script.js
-│── photo.jpeg
-│── README.md
-```
-
-## 🚀 Deployment
-
-The portfolio is deployed on **Vercel**.
-
-## 📬 Contact
-
-* **Email:** vaibhav.123456dubey@gmai.com
-* **GitHub:** https://github.com/Vaibhavd2602
-* **LinkedIn:** http://www.linkedin.com/in/vaibhav2602
-* **LeetCode:** https://leetcode.com/u/Vickyy2602/
-
-## 📄 Resume
-
-The latest version of my resume can be downloaded directly from the portfolio website.
-
-## ⭐ If you like this project
-
-Please consider giving it a ⭐ on GitHub. It motivates me to build more projects.
-
----
-
-Made with ❤️ by **Vaibhav Dubey**
+│
+├── index.html
+├── style.css
+├── script.js
+├── photo.jpeg
+├── Vaibhav_Dubey_Resume.pdf
+├── Oracle certificate.pdf
+├── Deloitte internship certificate.pdf
+├── The Joy of Computing using Python.pdf
+├── accenture.pdf
+│
+└── README.md
