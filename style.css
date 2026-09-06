@@ -887,3 +887,12 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
 .achievement-card:hover small {
     opacity: 1;
 }
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #00d9a5;
+    display: block;
+    margin: 0 auto 25px;
+}
