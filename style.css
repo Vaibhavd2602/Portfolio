@@ -282,9 +282,9 @@ h3 {
   position: relative;
   width: min(420px, 88vw);
   border-radius: 50%;
-aspect-ratio: 1;
-object-fit: contain;
-filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
+  aspect-ratio: 1;
+  object-fit: contain;
+  filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
 }
 
 .metric-chip {
@@ -441,9 +441,12 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
   font-weight: 900;
 }
 
+/* ---------- Problem Solving ---------- */
+
 .problem-grid {
   display: grid;
   grid-template-columns: 1fr 0.9fr;
+  align-items: stretch;
   gap: 18px;
 }
 
@@ -459,25 +462,14 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
   box-shadow: var(--shadow);
 }
 
+/* LeetCode card: left side, spans the stats + bars rows on the right */
 .leetcode-card {
   display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
+  grid-template-columns: 1fr;
+  grid-row: span 2;
+  align-content: center;
   gap: 22px;
-  min-height: 250px;
   padding: clamp(22px, 4vw, 32px);
-}
-
-.leetcode-mark {
-  display: grid;
-  width: 86px;
-  height: 86px;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--gold);
-  color: #171104;
-  font-size: 1.5rem;
-  font-weight: 900;
 }
 
 .card-kicker {
@@ -527,14 +519,15 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
 
 .topic-bars {
   display: grid;
-  grid-column: 1 / -1;
+  grid-column: 2;
+  align-content: center;
   gap: 16px;
   padding: clamp(20px, 4vw, 28px);
 }
 
 .topic-row {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 150px 1fr;
   gap: 16px;
   align-items: center;
 }
@@ -558,11 +551,28 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
   background: linear-gradient(90deg, var(--teal), var(--gold), var(--coral));
 }
 
+.lc-screenshot {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.25s ease;
+}
+
+.lc-screenshot:hover {
+  transform: scale(1.02);
+}
+
+/* ---------- Projects + Achievements ---------- */
+
 .project-grid,
 .achievement-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
   gap: 18px;
+  width: 100%;
 }
 
 .project-card,
@@ -571,7 +581,7 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
   min-height: 290px;
   flex-direction: column;
   padding: 24px;
-  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease, opacity 520ms ease;
 }
 
 .achievement-card {
@@ -584,6 +594,13 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
 .achievement-card:focus-within {
   border-color: rgba(40, 224, 180, 0.52);
   background: linear-gradient(145deg, rgba(40, 224, 180, 0.1), rgba(255, 255, 255, 0.04));
+}
+
+/* keeps the hover lift working together with the reveal animation */
+.project-card.reveal.is-visible:hover,
+.project-card.reveal.is-visible:focus-within,
+.achievement-card.reveal.is-visible:hover,
+.achievement-card.reveal.is-visible:focus-within {
   transform: translateY(-4px);
 }
 
@@ -622,6 +639,8 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
   font-size: 0.78rem;
   line-height: 1;
 }
+
+/* ---------- Contact ---------- */
 
 .contact {
   display: grid;
@@ -732,6 +751,37 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
   transform: translateY(0);
 }
 
+/* Clickable Certificate Cards */
+.achievement-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+}
+
+.achievement-card small {
+  display: block;
+  margin-top: 12px;
+  opacity: 0.7;
+  font-size: 0.85rem;
+}
+
+.achievement-card:hover small {
+  opacity: 1;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #00d9a5;
+  display: block;
+  margin: 0 auto 25px;
+}
+
+/* ---------- Responsive ---------- */
+
 @media (max-width: 960px) {
   .hero,
   .about-grid,
@@ -757,7 +807,12 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
     min-height: 300px;
   }
 
-  .stats-panel {
+  .leetcode-card {
+    grid-row: auto;
+  }
+
+  .stats-panel,
+  .topic-bars {
     grid-column: auto;
   }
 }
@@ -822,6 +877,7 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
 
   .hero-visual {
     min-height: auto;
+    align-content: center;
   }
 
   .metric-chip {
@@ -835,22 +891,18 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
     inset: auto;
   }
 
-  .hero-visual {
-    align-content: center;
-  }
-
   .hero-visual img {
     width: min(330px, 86vw);
-  }
-
-  .leetcode-card {
-    grid-template-columns: 1fr;
   }
 
   .stats-panel,
   .project-grid,
   .achievement-grid {
     grid-template-columns: 1fr;
+  }
+
+  .stats-panel {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .topic-row {
@@ -868,43 +920,4 @@ filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.5));
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
-}
-/* Clickable Certificate Cards */
-.achievement-card {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    display: block;
-}
-
-.achievement-card small {
-    display: block;
-    margin-top: 12px;
-    opacity: 0.7;
-    font-size: 0.85rem;
-}
-
-.achievement-card:hover small {
-    opacity: 1;
-}
-.profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid #00d9a5;
-    display: block;
-    margin: 0 auto 25px;
-}
-.lc-screenshot {
-  width: 100%;
-  max-width: 520px;
-  margin-top: 16px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.25s ease;
-}
-
-.lc-screenshot:hover {
-  transform: scale(1.02);
 }
